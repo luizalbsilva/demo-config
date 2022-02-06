@@ -1,6 +1,7 @@
 package br.com.tamanhofamilia.democonfig.demoservice.model.services.impl;
 
 import br.com.tamanhofamilia.democonfig.demoservice.model.entities.CountryEntity;
+import br.com.tamanhofamilia.democonfig.demoservice.model.repositories.ICountryRepository;
 import br.com.tamanhofamilia.democonfig.demoservice.model.services.ICountryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

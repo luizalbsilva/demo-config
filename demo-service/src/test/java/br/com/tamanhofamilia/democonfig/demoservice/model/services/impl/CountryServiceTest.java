@@ -1,6 +1,7 @@
 package br.com.tamanhofamilia.democonfig.demoservice.model.services.impl;
 
 import br.com.tamanhofamilia.democonfig.demoservice.model.entities.CountryEntity;
+import br.com.tamanhofamilia.democonfig.demoservice.model.repositories.ICountryRepository;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;

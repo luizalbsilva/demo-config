@@ -1,4 +1,4 @@
-package br.com.tamanhofamilia.democonfig.demoservice.model.services.impl;
+package br.com.tamanhofamilia.democonfig.demoservice.model.repositories;
 
 import br.com.tamanhofamilia.democonfig.demoservice.model.entities.CountryEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
