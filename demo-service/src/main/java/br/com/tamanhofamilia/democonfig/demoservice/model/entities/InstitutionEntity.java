@@ -1,8 +1,6 @@
 package br.com.tamanhofamilia.democonfig.demoservice.model.entities;
 
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.ToString;
+import lombok.*;
 
 import javax.persistence.*;
 
@@ -11,6 +9,9 @@ import javax.persistence.*;
 @Table(name = "institutions", schema = "configs")
 @ToString
 @EqualsAndHashCode( of = "id")
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 public class InstitutionEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
