@@ -2,14 +2,14 @@ package br.com.tamanhofamilia.democonfig.demoservice.model.services;
 
 import java.util.List;
 
-public interface ICrudService<ENTITY, ID> {
-    List<ENTITY> listAll();
+public interface ICrudService<E, I> {
+    List<E> listAll();
 
-    ENTITY create(ENTITY entity);
+    E create(E entity);
 
-    ENTITY update(ID id, ENTITY entity);
+    E update(I id, E entity);
 
-    ENTITY find(ID id);
+    E find(I id);
 
-    void delete(ID id);
+    void delete(I id);
 }
