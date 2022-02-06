@@ -17,6 +17,10 @@
 /demo-ui/chrome-profiler-events*.json
 
 #
+## Docker data
+/data
+
+#
 ## IDEs and editors
 /.idea
 #.project
