@@ -1,5 +1,6 @@
 package br.com.tamanhofamilia.democonfig.demoservice.model.entities;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.*;
 
 import javax.persistence.*;
@@ -12,15 +13,18 @@ import javax.persistence.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
+@Schema(description = "Institution's data")
 public class InstitutionEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
+    @Schema(description = "Institution's ID", example = "12")
     private Long id;
 
     @Version
     private long version;
 
+    @Schema(description = "Institution's name", example = "Daesong Bank")
     @Column(name = "inst_name", length = 255, nullable = false)
     private String name;
 }
