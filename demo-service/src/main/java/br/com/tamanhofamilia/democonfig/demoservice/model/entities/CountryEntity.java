@@ -1,8 +1,8 @@
 package br.com.tamanhofamilia.democonfig.demoservice.model.entities;
 
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.ToString;
+import com.fasterxml.jackson.annotation.JsonAlias;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.*;
 
 import javax.persistence.*;
 
@@ -11,9 +11,14 @@ import javax.persistence.*;
 @ToString
 @EqualsAndHashCode( of = "id")
 @Table(name = "countries", schema = "configs")
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 public class CountryEntity {
     @Id
     @Column(name = "country_code", columnDefinition = "char(3)", nullable = false)
+    @JsonProperty("country-code")
+    @JsonAlias("country-code")
     private String countryCode;
 
     @Version
